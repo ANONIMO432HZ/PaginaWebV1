@@ -1,0 +1,27 @@
+{
+  "name": "paginawebv1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev:css": "tailwindcss -i ./src/input.css -o ./css/styles.css --watch",
+    "build:css": "tailwindcss -i ./src/input.css -o ./css/styles.css --minify",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ANONIMO432HZ/PaginaWebV1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/ANONIMO432HZ/PaginaWebV1/issues"
+  },
+  "homepage": "https://github.com/ANONIMO432HZ/PaginaWebV1#readme",
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.3.3",
+    "tailwindcss": "^4.3.3"
+  }
+}

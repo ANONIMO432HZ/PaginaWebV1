@@ -1,43 +1,39 @@
-<nav>
-
-    <ul>
-
-        <li>
-
-            Nosotros
-
-            <ul>
-
-                <li>Presentación</li>
-
-                <li>Visión, Misión y Valores</li>
-
-                <li>Organización Institucional</li>
-
-                <li>Plana Jerárquica</li>
-
-                <li>Plana Docente</li>
-
-                <li>Local</li>
-
-            </ul>
-
-        </li>
-
-        <li>Programas de Estudio</li>
-
-        <li>Admisión y Matrícula</li>
-
-        <li>Transparencia</li>
-
-        <li>Trámite</li>
-
-        <li>Contáctanos</li>
-
-        <li>Servicios</li>
-
-        <li>Otras Páginas</li>
-
-    </ul>
-
-</nav>
+<header class="bg-blue-900 text-white shadow-md sticky top-0 z-50">
+    <nav class="max-w-6xl mx-auto px-4 py-4 flex flex-wrap justify-between items-center">
+        <a href="index.html" class="text-xl font-bold tracking-wide hover:text-blue-200 transition-colors">
+            IESTP Huanta
+        </a>
+        <ul class="flex flex-wrap items-center gap-4 text-sm md:text-base font-medium">
+            <li class="relative group cursor-pointer py-2 hover:text-blue-200 transition-colors">
+                <a href="#nosotros">Nosotros</a>
+                <!-- Submenú desplegable -->
+                <ul class="absolute left-0 top-full hidden group-hover:block bg-white text-gray-800 shadow-lg rounded-lg py-2 w-56 border border-gray-100 z-50">
+                    <li><a href="#" class="block px-4 py-2 hover:bg-blue-50 text-sm">Presentación</a></li>
+                    <li><a href="#" class="block px-4 py-2 hover:bg-blue-50 text-sm">Visión, Misión y Valores</a></li>
+                    <li><a href="#" class="block px-4 py-2 hover:bg-blue-50 text-sm">Organización Institucional</a></li>
+                    <li><a href="#" class="block px-4 py-2 hover:bg-blue-50 text-sm">Plana Jerárquica</a></li>
+                    <li><a href="#" class="block px-4 py-2 hover:bg-blue-50 text-sm">Plana Docente</a></li>
+                    <li><a href="#" class="block px-4 py-2 hover:bg-blue-50 text-sm">Local</a></li>
+                </ul>
+            </li>
+            <li class="cursor-pointer py-2 hover:text-blue-200 transition-colors">
+                <a href="#carreras">Programas de Estudio</a>
+            </li>
+            <li class="cursor-pointer py-2 hover:text-blue-200 transition-colors">
+                <a href="#admision">Admisión y Matrícula</a>
+            </li>
+            <li class="cursor-pointer py-2 hover:text-blue-200 transition-colors">
+                <a href="#transparencia">Transparencia</a>
+            </li>
+            <li class="cursor-pointer py-2 hover:text-blue-200 transition-colors">
+                <a href="#tramites">Trámite</a>
+            </li>
+            <li class="cursor-pointer py-2 hover:text-blue-200 transition-colors">
+                <a href="#servicios">Servicios</a>
+            </li>
+            <li class="cursor-pointer py-2 hover:text-blue-200 transition-colors">
+                <a href="#contacto">Contáctanos</a>
+            </li>
+        </ul>
+    </nav>
+</header>
