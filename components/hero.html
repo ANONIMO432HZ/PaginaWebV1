@@ -1,14 +1,178 @@
-<section id="hero" class="bg-blue-800 text-white rounded-xl p-8 md:p-12 text-center shadow-md">
-    <span class="inline-block bg-blue-900/60 text-blue-200 text-xs md:text-sm font-semibold px-4 py-1 rounded-full mb-4 border border-blue-700">
-        IESTP HUANTA
-    </span>
-    <h1 class="text-3xl md:text-4xl font-bold mb-4">
-        Construye tu futuro con formación de calidad
-    </h1>
-    <p class="text-base md:text-lg text-blue-100 max-w-2xl mx-auto mb-6 leading-relaxed">
-        El Instituto de Educación Superior Público Huanta ofrece programas de estudio orientados al desarrollo profesional y tecnológico de nuestros estudiantes.
-    </p>
-    <a href="#carreras" class="inline-block bg-amber-500 hover:bg-amber-600 text-white font-semibold py-2 px-6 rounded-lg transition-colors shadow">
-        Ver Programas
-    </a>
+<!-- HERO SECTION PRINCIPAL -->
+<section id="hero" class="relative overflow-hidden bg-slate-900 text-white rounded-3xl mx-4 sm:mx-6 lg:mx-8 shadow-2xl border border-slate-800">
+    <!-- Background Gradient Overlay & Patterns -->
+    <div class="absolute inset-0 bg-cover bg-center opacity-25 mix-blend-overlay" style="background-image: url('https://iesphuanta.edu.pe/wp-content/uploads/2025/10/OKOK.jpg');"></div>
+    <div class="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-900/90 to-purple-950/70"></div>
+    
+    <!-- Decorative Glowing Orbs -->
+    <div class="absolute -top-24 -right-24 w-96 h-96 bg-purple-600/20 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute -bottom-24 -left-24 w-96 h-96 bg-blue-600/20 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="relative max-w-5xl mx-auto px-6 py-16 sm:py-24 text-center z-10">
+        <!-- Badge -->
+        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/15 text-purple-200 text-xs sm:text-sm font-semibold mb-6 shadow-inner animate-pulse">
+            <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+            <span>INSTITUTO DE EDUCACIÓN SUPERIOR PÚBLICO “HUANTA”</span>
+        </div>
+
+        <!-- Headline -->
+        <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white mb-6 leading-tight">
+            Construye tu futuro con <br class="hidden sm:inline" />
+            <span class="text-transparent bg-clip-text" style="background-image: linear-gradient(135deg, #a855f7 0%, #38bdf8 100%);">
+                formación de calidad
+            </span>
+        </h1>
+
+        <!-- Subtitle -->
+        <p class="text-sm sm:text-base lg:text-lg text-slate-300 max-w-3xl mx-auto mb-10 leading-relaxed font-normal">
+            El Instituto de Educación Superior Público Huanta se enorgullece de ser un <strong class="text-white font-semibold">instituto licenciado</strong>, garantizando que nuestros programas académicos cumplen con los más altos estándares educativos y de empleabilidad laboral.
+        </p>
+
+        <!-- CTA Buttons -->
+        <div class="flex flex-wrap justify-center items-center gap-4">
+            <a href="#carreras" class="inline-flex items-center gap-2.5 px-6 py-3.5 rounded-xl font-bold text-sm sm:text-base text-white shadow-lg transition-all hover:scale-105 active:scale-95" style="background: linear-gradient(135deg, #7114ef 0%, #1475f7 100%);">
+                <span>Nuestros Programas de Estudio</span>
+                <i class="fa-solid fa-arrow-right text-xs"></i>
+            </a>
+            <a href="#nosotros" class="inline-flex items-center gap-2.5 px-6 py-3.5 rounded-xl font-bold text-sm sm:text-base text-white bg-white/10 hover:bg-white/15 border border-white/20 backdrop-blur-md transition-all hover:scale-105 active:scale-95">
+                <i class="fa-solid fa-circle-play text-purple-400 text-sm"></i>
+                <span>Sobre Nosotros</span>
+            </a>
+        </div>
+
+        <!-- Mini Stats pill -->
+        <div class="mt-12 pt-8 border-t border-white/10 flex flex-wrap justify-center items-center gap-6 sm:gap-12 text-xs sm:text-sm text-slate-300">
+            <div class="flex items-center gap-2">
+                <i class="fa-solid fa-medal text-yellow-400 text-base"></i>
+                <span>39 Años de Trayectoria</span>
+            </div>
+            <div class="flex items-center gap-2">
+                <i class="fa-solid fa-graduation-cap text-cyan-400 text-base"></i>
+                <span>Título a Nombre de la Nación</span>
+            </div>
+            <div class="flex items-center gap-2">
+                <i class="fa-solid fa-building-columns text-purple-400 text-base"></i>
+                <span>Licenciado por MINEDU</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 5 TARJETAS DESTACADAS DE CARRERAS (INSPIRADAS EN IESP HUANTA) -->
+<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-8 relative z-20">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+        <!-- 1. Diseño y Programación Web -->
+        <a href="#carreras" class="group bg-white p-5 rounded-2xl shadow-lg border border-slate-100 hover:border-purple-300 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1.5 flex flex-col justify-between">
+            <div class="w-12 h-12 rounded-xl flex items-center justify-center text-white mb-4 shadow-md transition-transform group-hover:scale-110" style="background: linear-gradient(135deg, #7114ef, #1475f7);">
+                <i class="fa-solid fa-code text-lg"></i>
+            </div>
+            <div>
+                <h3 class="font-bold text-slate-900 text-sm sm:text-base group-hover:text-purple-700 transition-colors leading-snug">
+                    Diseño y Programación Web
+                </h3>
+                <p class="text-xs text-slate-500 mt-1.5 line-clamp-2">Desarrollo de software, web apps y base de datos.</p>
+            </div>
+            <div class="mt-4 flex items-center text-xs font-semibold text-purple-600 gap-1 group-hover:translate-x-1 transition-transform">
+                <span>Ver programa</span>
+                <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </div>
+        </a>
+
+        <!-- 2. Enfermería Técnica -->
+        <a href="#carreras" class="group bg-white p-5 rounded-2xl shadow-lg border border-slate-100 hover:border-blue-300 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1.5 flex flex-col justify-between">
+            <div class="w-12 h-12 rounded-xl flex items-center justify-center text-white mb-4 shadow-md transition-transform group-hover:scale-110" style="background: linear-gradient(135deg, #0284c7, #38bdf8);">
+                <i class="fa-solid fa-user-nurse text-lg"></i>
+            </div>
+            <div>
+                <h3 class="font-bold text-slate-900 text-sm sm:text-base group-hover:text-blue-600 transition-colors leading-snug">
+                    Enfermería Técnica
+                </h3>
+                <p class="text-xs text-slate-500 mt-1.5 line-clamp-2">Atención integral y humanizada de la salud.</p>
+            </div>
+            <div class="mt-4 flex items-center text-xs font-semibold text-blue-600 gap-1 group-hover:translate-x-1 transition-transform">
+                <span>Ver programa</span>
+                <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </div>
+        </a>
+
+        <!-- 3. Mecatrónica Automotriz -->
+        <a href="#carreras" class="group bg-white p-5 rounded-2xl shadow-lg border border-slate-100 hover:border-indigo-300 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1.5 flex flex-col justify-between">
+            <div class="w-12 h-12 rounded-xl flex items-center justify-center text-white mb-4 shadow-md transition-transform group-hover:scale-110" style="background: linear-gradient(135deg, #4f46e5, #818cf8);">
+                <i class="fa-solid fa-car text-lg"></i>
+            </div>
+            <div>
+                <h3 class="font-bold text-slate-900 text-sm sm:text-base group-hover:text-indigo-600 transition-colors leading-snug">
+                    Mecatrónica Automotriz
+                </h3>
+                <p class="text-xs text-slate-500 mt-1.5 line-clamp-2">Sistemas electrónicos y motores modernos.</p>
+            </div>
+            <div class="mt-4 flex items-center text-xs font-semibold text-indigo-600 gap-1 group-hover:translate-x-1 transition-transform">
+                <span>Ver programa</span>
+                <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </div>
+        </a>
+
+        <!-- 4. Industrias de Alimentos y Bebidas -->
+        <a href="#carreras" class="group bg-white p-5 rounded-2xl shadow-lg border border-slate-100 hover:border-amber-300 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1.5 flex flex-col justify-between">
+            <div class="w-12 h-12 rounded-xl flex items-center justify-center text-white mb-4 shadow-md transition-transform group-hover:scale-110" style="background: linear-gradient(135deg, #d97706, #fbbf24);">
+                <i class="fa-solid fa-apple-whole text-lg"></i>
+            </div>
+            <div>
+                <h3 class="font-bold text-slate-900 text-sm sm:text-base group-hover:text-amber-600 transition-colors leading-snug">
+                    Industrias de Alimentos
+                </h3>
+                <p class="text-xs text-slate-500 mt-1.5 line-clamp-2">Procesamiento y control de calidad agroindustrial.</p>
+            </div>
+            <div class="mt-4 flex items-center text-xs font-semibold text-amber-600 gap-1 group-hover:translate-x-1 transition-transform">
+                <span>Ver programa</span>
+                <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </div>
+        </a>
+
+        <!-- 5. Producción Agropecuaria -->
+        <a href="#carreras" class="group bg-white p-5 rounded-2xl shadow-lg border border-slate-100 hover:border-emerald-300 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1.5 flex flex-col justify-between">
+            <div class="w-12 h-12 rounded-xl flex items-center justify-center text-white mb-4 shadow-md transition-transform group-hover:scale-110" style="background: linear-gradient(135deg, #059669, #34d399);">
+                <i class="fa-solid fa-seedling text-lg"></i>
+            </div>
+            <div>
+                <h3 class="font-bold text-slate-900 text-sm sm:text-base group-hover:text-emerald-600 transition-colors leading-snug">
+                    Producción Agropecuaria
+                </h3>
+                <p class="text-xs text-slate-500 mt-1.5 line-clamp-2">Gestión de cultivos y producción pecuaria.</p>
+            </div>
+            <div class="mt-4 flex items-center text-xs font-semibold text-emerald-600 gap-1 group-hover:translate-x-1 transition-transform">
+                <span>Ver programa</span>
+                <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </div>
+        </a>
+    </div>
+</section>
+
+<!-- ENLACES DE INTERÉS OFICIALES (MINEDU, TITULA, REGISTRA, AVANZA) -->
+<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-10">
+    <div class="bg-white rounded-2xl p-5 shadow-sm border border-slate-200/80 flex flex-col md:flex-row items-center justify-between gap-4">
+        <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-xl bg-purple-50 text-purple-600 flex items-center justify-center font-bold">
+                <i class="fa-solid fa-link"></i>
+            </div>
+            <div>
+                <h4 class="text-sm font-bold text-slate-900">Enlaces de Interés Nacional</h4>
+                <p class="text-xs text-slate-500">Plataformas oficiales del Ministerio de Educación</p>
+            </div>
+        </div>
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 w-full md:w-auto">
+            <a href="https://www.gob.pe/minedu" target="_blank" rel="noopener noreferrer" class="px-4 py-2 bg-slate-50 hover:bg-slate-100 rounded-xl border border-slate-200/60 text-xs font-semibold text-slate-700 text-center transition-all hover:scale-105 flex items-center justify-center gap-1.5">
+                <i class="fa-solid fa-building-flag text-rose-500"></i> MINEDU
+            </a>
+            <a href="https://titula.minedu.gob.pe/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 bg-slate-50 hover:bg-slate-100 rounded-xl border border-slate-200/60 text-xs font-semibold text-slate-700 text-center transition-all hover:scale-105 flex items-center justify-center gap-1.5">
+                <i class="fa-solid fa-stamp text-blue-500"></i> TITULA
+            </a>
+            <a href="https://registra.minedu.gob.pe/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 bg-slate-50 hover:bg-slate-100 rounded-xl border border-slate-200/60 text-xs font-semibold text-slate-700 text-center transition-all hover:scale-105 flex items-center justify-center gap-1.5">
+                <i class="fa-solid fa-file-signature text-purple-500"></i> REGISTRA
+            </a>
+            <a href="https://avanza.minedu.gob.pe/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 bg-slate-50 hover:bg-slate-100 rounded-xl border border-slate-200/60 text-xs font-semibold text-slate-700 text-center transition-all hover:scale-105 flex items-center justify-center gap-1.5">
+                <i class="fa-solid fa-arrow-trend-up text-emerald-500"></i> AVANZA
+            </a>
+        </div>
+    </div>
 </section>

@@ -1,29 +1,52 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IESTP Huanta</title>
+    <title>IESTP Huanta | Instituto Licenciado de Educación Superior</title>
+    <meta name="description" content="Instituto de Educación Superior Público Huanta. 39 años formando profesionales técnicos de excelencia en Ayacucho, Perú.">
+    <link rel="icon" type="image/png" href="https://iesphuanta.edu.pe/wp-content/uploads/2021/12/logo_tecno-1-2.png">
+    
+    <!-- Google Fonts: Nunito & Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,400&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- Tailwind CSS Compilado -->
     <link rel="stylesheet" href="./css/styles.css">
+    
+    <style>
+        body {
+            font-family: 'Nunito', sans-serif;
+        }
+        h1, h2, h3, h4, h5, h6, .font-heading {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
 </head>
 
-<body class="bg-gray-50 text-gray-800 font-sans antialiased min-h-screen flex flex-col justify-between">
+<body class="bg-slate-50 text-slate-800 antialiased min-h-screen flex flex-col justify-between selection:bg-purple-600 selection:text-white">
 
     <!-- NAVBAR COMPONENT -->
     <div data-include="components/navbar.html"></div>
 
     <!-- MAIN -->
-    <main class="max-w-6xl mx-auto px-4 py-8 space-y-12 w-full flex-grow">
+    <main class="w-full flex-grow space-y-16 pb-16">
         <div data-include="components/hero.html"></div>
-        <div data-include="components/nosotros.html"></div>
-        <div data-include="components/estadisticas.html"></div>
-        <div data-include="components/carreras.html"></div>
-        <div data-include="components/servicios.html"></div>
-        <div data-include="components/noticias.html"></div>
-        <div data-include="components/eventos.html"></div>
-        <div data-include="components/galeria.html"></div>
-        <div data-include="components/contacto.html"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-20">
+            <div data-include="components/nosotros.html"></div>
+            <div data-include="components/estadisticas.html"></div>
+            <div data-include="components/carreras.html"></div>
+            <div data-include="components/servicios.html"></div>
+            <div data-include="components/noticias.html"></div>
+            <div data-include="components/eventos.html"></div>
+            <div data-include="components/galeria.html"></div>
+            <div data-include="components/contacto.html"></div>
+        </div>
     </main>
 
     <!-- FOOTER COMPONENT -->

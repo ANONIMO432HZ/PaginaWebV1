@@ -1,1 +1,31 @@
 @import "tailwindcss";
+
+@theme {
+  --color-brand-purple: #7114ef;
+  --color-brand-blue: #1475f7;
+  --color-brand-cyan: #08d9ff;
+  --color-brand-dark: #0f172a;
+}
+
+/* Clases utilitarias institucionales inspiradas en IESP Huanta */
+.bg-gradient-brand {
+  background: linear-gradient(135deg, #7114ef 0%, #1475f7 100%);
+}
+
+.bg-gradient-brand-reverse {
+  background: linear-gradient(135deg, #1475f7 0%, #7114ef 100%);
+}
+
+.text-gradient-brand {
+  background: linear-gradient(135deg, #7114ef 0%, #1475f7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.border-gradient-brand {
+  border-image: linear-gradient(to right, #7114ef, #1475f7) 1;
+}
+
+.shadow-brand {
+  box-shadow: 0 10px 25px -5px rgba(113, 20, 239, 0.25), 0 8px 10px -6px rgba(20, 117, 247, 0.25);
+}
