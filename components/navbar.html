@@ -1,10 +1,10 @@
 <!-- TOP CONTACT BAR -->
-<div class="bg-slate-900 text-slate-300 text-xs border-b border-slate-800">
+<div class="bg-slate-950 text-slate-300 text-xs border-b border-slate-800/80 transition-colors">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2 flex flex-wrap justify-between items-center gap-2">
         <div class="flex flex-wrap items-center gap-4 sm:gap-6">
             <span class="flex items-center gap-2 hover:text-white transition-colors">
                 <i class="fa-solid fa-phone text-purple-400"></i>
-                <a href="tel:066322296">(066) 322296</a>
+                <a href="tel:066322296" class="font-medium">(066) 322296</a>
             </span>
             <span class="flex items-center gap-2 hover:text-white transition-colors">
                 <i class="fa-solid fa-location-dot text-blue-400"></i>
@@ -12,81 +12,81 @@
             </span>
             <span class="hidden md:flex items-center gap-2 hover:text-white transition-colors">
                 <i class="fa-solid fa-envelope text-cyan-400"></i>
-                <a href="mailto:mesadepartes@iesphuanta.edu.pe">mesadepartes@iesphuanta.edu.pe</a>
+                <a href="mailto:mesadepartes@iesphuanta.edu.pe" class="font-medium">mesadepartes@iesphuanta.edu.pe</a>
             </span>
-            <span class="hidden lg:inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-purple-900/60 text-purple-200 border border-purple-700/50 font-semibold">
+            <span class="hidden lg:inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-purple-900/50 text-purple-200 border border-purple-700/60 font-semibold text-[11px]">
                 <i class="fa-solid fa-certificate text-yellow-400"></i> Instituto Licenciado
             </span>
         </div>
         <div class="flex items-center gap-4 ml-auto sm:ml-0">
-            <span class="hidden sm:inline text-slate-400">Horario: Lun - Vie 7:30 am - 1:15 pm</span>
-            <div class="flex items-center gap-3">
-                <a href="https://www.facebook.com/profile.php?id=61557665334329" target="_blank" rel="noopener noreferrer" class="w-6 h-6 rounded-full bg-blue-600/30 hover:bg-blue-600 text-white flex items-center justify-center transition-all" title="Facebook Oficial">
-                    <i class="fa-brands fa-facebook-f text-xs"></i>
+            <span class="hidden sm:inline text-slate-400 text-[11px]">
+                <i class="fa-regular fa-clock mr-1 text-purple-400"></i> Lun - Vie: 7:30 am - 1:15 pm
+            </span>
+            <div class="flex items-center gap-2.5">
+                <a href="https://www.facebook.com/profile.php?id=61557665334329" target="_blank" rel="noopener noreferrer" class="w-6 h-6 rounded-full bg-slate-800 hover:bg-blue-600 text-slate-300 hover:text-white flex items-center justify-center transition-all duration-200 hover:scale-110" title="Facebook Oficial IESTP Huanta">
+                    <i class="fa-brands fa-facebook-f text-[11px]"></i>
                 </a>
-                <a href="#contacto" class="w-6 h-6 rounded-full bg-purple-600/30 hover:bg-purple-600 text-white flex items-center justify-center transition-all" title="Contacto">
-                    <i class="fa-solid fa-headset text-xs"></i>
+                <a href="#contacto" class="w-6 h-6 rounded-full bg-slate-800 hover:bg-purple-600 text-slate-300 hover:text-white flex items-center justify-center transition-all duration-200 hover:scale-110" title="Contáctanos">
+                    <i class="fa-solid fa-headset text-[11px]"></i>
                 </a>
             </div>
         </div>
     </div>
 </div>
 
-<!-- MAIN HEADER & NAVIGATION -->
-<header class="bg-white/95 backdrop-blur-md text-slate-800 shadow-sm sticky top-0 z-50 border-b border-slate-100 transition-all">
-    <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3.5 flex justify-between items-center">
-        <!-- Logo -->
-        <a href="index.html" class="flex items-center gap-3.5 group">
-            <img src="https://iesphuanta.edu.pe/wp-content/uploads/2021/12/logo_tecno-1-2.png" alt="Logo IESP Huanta" class="h-12 w-auto object-contain transition-transform group-hover:scale-105" onerror="this.src='https://placehold.co/100x100/7114ef/ffffff?text=IESP'">
-            <div class="flex flex-col">
-                <span class="font-extrabold text-base md:text-lg tracking-tight text-slate-900 group-hover:text-purple-700 transition-colors leading-tight">
-                    IESTP <span class="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-blue-600">HUANTA</span>
-                </span>
-                <span class="text-[10px] md:text-xs font-semibold text-slate-500 uppercase tracking-wider">
-                    Excelencia &bull; Tecnología &bull; Futuro
-                </span>
-            </div>
+<!-- MAIN HEADER & NAVIGATION (STICKY) -->
+<header id="main-header" class="bg-white/95 backdrop-blur-md text-slate-800 shadow-sm sticky top-0 z-50 border-b border-slate-100 transition-all duration-300">
+    <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex justify-between items-center">
+        <!-- Logo Oficial del IESTP Huanta -->
+        <a href="index.html" class="flex items-center gap-3 group">
+            <img src="https://iesphuanta.edu.pe/wp-content/uploads/2021/12/WhatsApp-Image-2025-09-17-at-12.55.48-PM-Photoroom.png" 
+                 alt="Logo IESTP Huanta" 
+                 class="h-11 sm:h-12 w-auto object-contain transition-transform group-hover:scale-105" 
+                 onerror="this.src='https://iesphuanta.edu.pe/wp-content/uploads/2021/12/logo_tecno-1-2.png'">
         </a>
 
-        <!-- Desktop Navigation Menu -->
-        <ul class="hidden lg:flex items-center gap-1 xl:gap-2 text-sm font-semibold text-slate-700">
-            <!-- Nosotros -->
+        <!-- Desktop Navigation Menu (Completo e Idéntico a WordPress) -->
+        <ul class="hidden xl:flex items-center gap-1 text-[13px] font-semibold text-slate-700">
+            <!-- 1. Nosotros -->
             <li class="relative group py-2">
-                <button class="flex items-center gap-1 px-3 py-1.5 rounded-lg hover:text-purple-600 hover:bg-purple-50/60 transition-colors">
+                <button class="nav-link-item flex items-center gap-1 px-2.5 py-1.5 rounded-lg hover:text-purple-600 transition-colors">
                     <span>Nosotros</span>
-                    <i class="fa-solid fa-chevron-down text-[10px] text-slate-400 group-hover:rotate-180 transition-transform"></i>
+                    <i class="fa-solid fa-chevron-down text-[9px] text-slate-400 group-hover:rotate-180 transition-transform"></i>
                 </button>
-                <div class="absolute left-0 top-full pt-2 hidden group-hover:block w-60 z-50">
-                    <div class="bg-white rounded-xl shadow-xl border border-slate-100 py-2 overflow-hidden">
+                <div class="absolute left-0 top-full pt-2 hidden group-hover:block w-64 z-50 animate-fadeIn">
+                    <div class="bg-white rounded-xl shadow-xl border border-slate-100 py-2 overflow-hidden ring-1 ring-black/5">
                         <a href="#nosotros" class="flex items-center gap-2.5 px-4 py-2 hover:bg-purple-50 hover:text-purple-700 text-xs font-medium text-slate-700 transition-colors">
-                            <i class="fa-solid fa-building-columns text-purple-500 text-xs w-4"></i> Presentación
+                            <i class="fa-solid fa-building-columns text-purple-600 text-xs w-4"></i> Presentación
+                        </a>
+                        <a href="#mision-vision" class="flex items-center gap-2.5 px-4 py-2 hover:bg-purple-50 hover:text-purple-700 text-xs font-medium text-slate-700 transition-colors">
+                            <i class="fa-solid fa-bullseye text-blue-600 text-xs w-4"></i> Visión, Misión y Valores
                         </a>
                         <a href="#nosotros" class="flex items-center gap-2.5 px-4 py-2 hover:bg-purple-50 hover:text-purple-700 text-xs font-medium text-slate-700 transition-colors">
-                            <i class="fa-solid fa-bullseye text-blue-500 text-xs w-4"></i> Visión, Misión y Valores
+                            <i class="fa-solid fa-sitemap text-indigo-600 text-xs w-4"></i> Organización Institucional
                         </a>
                         <a href="#nosotros" class="flex items-center gap-2.5 px-4 py-2 hover:bg-purple-50 hover:text-purple-700 text-xs font-medium text-slate-700 transition-colors">
-                            <i class="fa-solid fa-sitemap text-indigo-500 text-xs w-4"></i> Organización Institucional
+                            <i class="fa-solid fa-user-tie text-emerald-600 text-xs w-4"></i> Plana Jerárquica
                         </a>
                         <a href="#nosotros" class="flex items-center gap-2.5 px-4 py-2 hover:bg-purple-50 hover:text-purple-700 text-xs font-medium text-slate-700 transition-colors">
-                            <i class="fa-solid fa-user-tie text-emerald-500 text-xs w-4"></i> Plana Jerárquica y Docente
+                            <i class="fa-solid fa-chalkboard-user text-amber-600 text-xs w-4"></i> Plana Docente
                         </a>
                         <a href="#galeria" class="flex items-center gap-2.5 px-4 py-2 hover:bg-purple-50 hover:text-purple-700 text-xs font-medium text-slate-700 transition-colors">
-                            <i class="fa-solid fa-map-location-dot text-amber-500 text-xs w-4"></i> Local Institucional
+                            <i class="fa-solid fa-map-location-dot text-rose-500 text-xs w-4"></i> Local Institucional
                         </a>
                     </div>
                 </div>
             </li>
 
-            <!-- Programas de Estudios -->
+            <!-- 2. Programas de Estudios -->
             <li class="relative group py-2">
-                <a href="#carreras" class="flex items-center gap-1 px-3 py-1.5 rounded-lg hover:text-purple-600 hover:bg-purple-50/60 transition-colors">
-                    <span>Programas</span>
-                    <i class="fa-solid fa-chevron-down text-[10px] text-slate-400 group-hover:rotate-180 transition-transform"></i>
+                <a href="#carreras" class="nav-link-item flex items-center gap-1 px-2.5 py-1.5 rounded-lg hover:text-purple-600 transition-colors">
+                    <span>Programas de estudios</span>
+                    <i class="fa-solid fa-chevron-down text-[9px] text-slate-400 group-hover:rotate-180 transition-transform"></i>
                 </a>
-                <div class="absolute left-0 top-full pt-2 hidden group-hover:block w-72 z-50">
-                    <div class="bg-white rounded-xl shadow-xl border border-slate-100 py-2 overflow-hidden">
-                        <div class="px-4 py-1.5 text-[11px] font-bold text-slate-400 uppercase tracking-wider">
-                            5 Carreras Profesionales
+                <div class="absolute left-0 top-full pt-2 hidden group-hover:block w-72 z-50 animate-fadeIn">
+                    <div class="bg-white rounded-xl shadow-xl border border-slate-100 py-2 overflow-hidden ring-1 ring-black/5">
+                        <div class="px-4 py-1.5 text-[10px] font-bold text-slate-400 uppercase tracking-wider border-b border-slate-100 mb-1">
+                            Carreras Profesionales Técnicas
                         </div>
                         <a href="#carreras" class="flex items-center gap-2.5 px-4 py-2 hover:bg-purple-50 hover:text-purple-700 text-xs font-medium text-slate-700 transition-colors">
                             <i class="fa-solid fa-code text-purple-600 text-xs w-4"></i> Diseño y Programación Web
@@ -98,7 +98,7 @@
                             <i class="fa-solid fa-car text-indigo-600 text-xs w-4"></i> Mecatrónica Automotriz
                         </a>
                         <a href="#carreras" class="flex items-center gap-2.5 px-4 py-2 hover:bg-amber-50 hover:text-amber-700 text-xs font-medium text-slate-700 transition-colors">
-                            <i class="fa-solid fa-apple-whole text-amber-500 text-xs w-4"></i> Industrias de Alimentos
+                            <i class="fa-solid fa-apple-whole text-amber-500 text-xs w-4"></i> Industrias de Alimentos y Bebidas
                         </a>
                         <a href="#carreras" class="flex items-center gap-2.5 px-4 py-2 hover:bg-emerald-50 hover:text-emerald-700 text-xs font-medium text-slate-700 transition-colors">
                             <i class="fa-solid fa-seedling text-emerald-600 text-xs w-4"></i> Producción Agropecuaria
@@ -107,19 +107,19 @@
                 </div>
             </li>
 
-            <!-- Admisión y Matrícula -->
+            <!-- 3. Admisión y Matrícula -->
             <li class="relative group py-2">
-                <a href="#noticias" class="flex items-center gap-1 px-3 py-1.5 rounded-lg hover:text-purple-600 hover:bg-purple-50/60 transition-colors">
-                    <span>Admisión</span>
-                    <i class="fa-solid fa-chevron-down text-[10px] text-slate-400 group-hover:rotate-180 transition-transform"></i>
-                </a>
-                <div class="absolute left-0 top-full pt-2 hidden group-hover:block w-56 z-50">
-                    <div class="bg-white rounded-xl shadow-xl border border-slate-100 py-2 overflow-hidden">
+                <button class="nav-link-item flex items-center gap-1 px-2.5 py-1.5 rounded-lg hover:text-purple-600 transition-colors">
+                    <span>Admisión y Matricula</span>
+                    <i class="fa-solid fa-chevron-down text-[9px] text-slate-400 group-hover:rotate-180 transition-transform"></i>
+                </button>
+                <div class="absolute left-0 top-full pt-2 hidden group-hover:block w-60 z-50 animate-fadeIn">
+                    <div class="bg-white rounded-xl shadow-xl border border-slate-100 py-2 overflow-hidden ring-1 ring-black/5">
                         <a href="#noticias" class="flex items-center gap-2.5 px-4 py-2 hover:bg-purple-50 hover:text-purple-700 text-xs font-medium text-slate-700 transition-colors">
                             <i class="fa-solid fa-graduation-cap text-purple-600 text-xs w-4"></i> Admisión 2026
                         </a>
                         <a href="#noticias" class="flex items-center gap-2.5 px-4 py-2 hover:bg-purple-50 hover:text-purple-700 text-xs font-medium text-slate-700 transition-colors">
-                            <i class="fa-solid fa-id-card text-blue-600 text-xs w-4"></i> Proceso de Matrícula
+                            <i class="fa-solid fa-id-card text-blue-600 text-xs w-4"></i> Matricula
                         </a>
                         <a href="#noticias" class="flex items-center gap-2.5 px-4 py-2 hover:bg-purple-50 hover:text-purple-700 text-xs font-medium text-slate-700 transition-colors">
                             <i class="fa-solid fa-hand-holding-dollar text-emerald-600 text-xs w-4"></i> Becas y Créditos
@@ -128,46 +128,68 @@
                 </div>
             </li>
 
-            <!-- Transparencia -->
+            <!-- 4. Transparencia -->
             <li class="relative group py-2">
-                <a href="#estadisticas" class="flex items-center gap-1 px-3 py-1.5 rounded-lg hover:text-purple-600 hover:bg-purple-50/60 transition-colors">
+                <button class="nav-link-item flex items-center gap-1 px-2.5 py-1.5 rounded-lg hover:text-purple-600 transition-colors">
                     <span>Transparencia</span>
-                    <i class="fa-solid fa-chevron-down text-[10px] text-slate-400 group-hover:rotate-180 transition-transform"></i>
-                </a>
-                <div class="absolute left-0 top-full pt-2 hidden group-hover:block w-60 z-50">
-                    <div class="bg-white rounded-xl shadow-xl border border-slate-100 py-2 overflow-hidden">
+                    <i class="fa-solid fa-chevron-down text-[9px] text-slate-400 group-hover:rotate-180 transition-transform"></i>
+                </button>
+                <div class="absolute left-0 top-full pt-2 hidden group-hover:block w-64 z-50 animate-fadeIn">
+                    <div class="bg-white rounded-xl shadow-xl border border-slate-100 py-2 overflow-hidden ring-1 ring-black/5">
                         <a href="#estadisticas" class="flex items-center gap-2.5 px-4 py-2 hover:bg-purple-50 hover:text-purple-700 text-xs font-medium text-slate-700 transition-colors">
                             <i class="fa-solid fa-file-shield text-purple-600 text-xs w-4"></i> Documentos de Gestión
                         </a>
                         <a href="#estadisticas" class="flex items-center gap-2.5 px-4 py-2 hover:bg-purple-50 hover:text-purple-700 text-xs font-medium text-slate-700 transition-colors">
-                            <i class="fa-solid fa-chart-pie text-blue-600 text-xs w-4"></i> Estadísticas Institucionales
+                            <i class="fa-solid fa-chart-pie text-blue-600 text-xs w-4"></i> Estadísticas
                         </a>
-                        <a href="#nosotros" class="flex items-center gap-2.5 px-4 py-2 hover:bg-purple-50 hover:text-purple-700 text-xs font-medium text-slate-700 transition-colors">
-                            <i class="fa-solid fa-award text-amber-500 text-xs w-4"></i> Licenciamiento MINEDU
+                        <a href="#estadisticas" class="flex items-center gap-2.5 px-4 py-2 hover:bg-purple-50 hover:text-purple-700 text-xs font-medium text-slate-700 transition-colors">
+                            <i class="fa-solid fa-coins text-amber-500 text-xs w-4"></i> Inversiones y Recursos
                         </a>
                         <a href="#contacto" class="flex items-center gap-2.5 px-4 py-2 hover:bg-purple-50 hover:text-purple-700 text-xs font-medium text-slate-700 transition-colors">
-                            <i class="fa-solid fa-book-bookmark text-rose-500 text-xs w-4"></i> Libro de Reclamaciones
+                            <i class="fa-solid fa-book-bookmark text-rose-500 text-xs w-4"></i> Libro de reclamaciones
+                        </a>
+                        <a href="#nosotros" class="flex items-center gap-2.5 px-4 py-2 hover:bg-purple-50 hover:text-purple-700 text-xs font-medium text-slate-700 transition-colors">
+                            <i class="fa-solid fa-award text-emerald-500 text-xs w-4"></i> Licenciamiento
                         </a>
                     </div>
                 </div>
             </li>
 
-            <!-- Servicios -->
+            <!-- 5. Trámite -->
             <li class="relative group py-2">
-                <a href="#servicios" class="flex items-center gap-1 px-3 py-1.5 rounded-lg hover:text-purple-600 hover:bg-purple-50/60 transition-colors">
-                    <span>Servicios</span>
-                    <i class="fa-solid fa-chevron-down text-[10px] text-slate-400 group-hover:rotate-180 transition-transform"></i>
+                <button class="nav-link-item flex items-center gap-1 px-2.5 py-1.5 rounded-lg hover:text-purple-600 transition-colors">
+                    <span>Tramite</span>
+                    <i class="fa-solid fa-chevron-down text-[9px] text-slate-400 group-hover:rotate-180 transition-transform"></i>
+                </button>
+                <div class="absolute left-0 top-full pt-2 hidden group-hover:block w-48 z-50 animate-fadeIn">
+                    <div class="bg-white rounded-xl shadow-xl border border-slate-100 py-2 overflow-hidden ring-1 ring-black/5">
+                        <a href="#contacto" class="flex items-center gap-2.5 px-4 py-2 hover:bg-purple-50 hover:text-purple-700 text-xs font-medium text-slate-700 transition-colors">
+                            <i class="fa-solid fa-file-invoice text-purple-600 text-xs w-4"></i> Tupa
+                        </a>
+                    </div>
+                </div>
+            </li>
+
+            <!-- 6. Contáctanos -->
+            <li class="py-2">
+                <a href="#contacto" class="nav-link-item px-2.5 py-1.5 rounded-lg hover:text-purple-600 transition-colors">
+                    Contáctanos
                 </a>
-                <div class="absolute left-0 top-full pt-2 hidden group-hover:block w-56 z-50">
-                    <div class="bg-white rounded-xl shadow-xl border border-slate-100 py-2 overflow-hidden">
+            </li>
+
+            <!-- 7. Servicios -->
+            <li class="relative group py-2">
+                <a href="#servicios" class="nav-link-item flex items-center gap-1 px-2.5 py-1.5 rounded-lg hover:text-purple-600 transition-colors">
+                    <span>Servicios</span>
+                    <i class="fa-solid fa-chevron-down text-[9px] text-slate-400 group-hover:rotate-180 transition-transform"></i>
+                </a>
+                <div class="absolute left-0 top-full pt-2 hidden group-hover:block w-60 z-50 animate-fadeIn">
+                    <div class="bg-white rounded-xl shadow-xl border border-slate-100 py-2 overflow-hidden ring-1 ring-black/5">
                         <a href="#servicios" class="flex items-center gap-2.5 px-4 py-2 hover:bg-purple-50 hover:text-purple-700 text-xs font-medium text-slate-700 transition-colors">
                             <i class="fa-solid fa-book-open text-purple-600 text-xs w-4"></i> Biblioteca
                         </a>
                         <a href="#servicios" class="flex items-center gap-2.5 px-4 py-2 hover:bg-purple-50 hover:text-purple-700 text-xs font-medium text-slate-700 transition-colors">
-                            <i class="fa-solid fa-flask text-blue-600 text-xs w-4"></i> Laboratorios
-                        </a>
-                        <a href="#servicios" class="flex items-center gap-2.5 px-4 py-2 hover:bg-purple-50 hover:text-purple-700 text-xs font-medium text-slate-700 transition-colors">
-                            <i class="fa-solid fa-network-wired text-cyan-600 text-xs w-4"></i> Red Telemática
+                            <i class="fa-solid fa-layer-group text-blue-600 text-xs w-4"></i> Servicios complementarios
                         </a>
                         <a href="#servicios" class="flex items-center gap-2.5 px-4 py-2 hover:bg-purple-50 hover:text-purple-700 text-xs font-medium text-slate-700 transition-colors">
                             <i class="fa-solid fa-briefcase text-emerald-600 text-xs w-4"></i> Bolsa Laboral
@@ -176,40 +198,108 @@
                 </div>
             </li>
 
-            <!-- Trámites / Contacto -->
-            <li>
-                <a href="#contacto" class="px-3 py-1.5 rounded-lg hover:text-purple-600 hover:bg-purple-50/60 transition-colors">
-                    Contáctanos
-                </a>
+            <!-- 8. Otras páginas -->
+            <li class="relative group py-2">
+                <button class="nav-link-item flex items-center gap-1 px-2.5 py-1.5 rounded-lg hover:text-purple-600 transition-colors">
+                    <span>Otras páginas</span>
+                    <i class="fa-solid fa-chevron-down text-[9px] text-slate-400 group-hover:rotate-180 transition-transform"></i>
+                </button>
+                <div class="absolute right-0 top-full pt-2 hidden group-hover:block w-56 z-50 animate-fadeIn">
+                    <div class="bg-white rounded-xl shadow-xl border border-slate-100 py-2 overflow-hidden ring-1 ring-black/5">
+                        <a href="#enlaces-interes" class="flex items-center gap-2.5 px-4 py-2 hover:bg-purple-50 hover:text-purple-700 text-xs font-medium text-slate-700 transition-colors">
+                            <i class="fa-solid fa-link text-purple-600 text-xs w-4"></i> Links Institucionales
+                        </a>
+                        <a href="#noticias" class="flex items-center gap-2.5 px-4 py-2 hover:bg-purple-50 hover:text-purple-700 text-xs font-medium text-slate-700 transition-colors">
+                            <i class="fa-regular fa-newspaper text-blue-600 text-xs w-4"></i> Noticias
+                        </a>
+                    </div>
+                </div>
             </li>
         </ul>
 
-        <!-- Right Action Button -->
+        <!-- Right Action Button: Admisión 2026 -->
         <div class="hidden sm:flex items-center gap-3">
-            <a href="#noticias" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-semibold text-white shadow-sm transition-all hover:shadow-md hover:scale-[1.02] active:scale-[0.98]" style="background: linear-gradient(135deg, #7114ef 0%, #1475f7 100%);">
-                <i class="fa-solid fa-paper-plane text-xs"></i>
+            <a href="#noticias" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs sm:text-sm font-bold text-white shadow-brand transition-all hover:scale-105 active:scale-95 bg-gradient-brand">
+                <i class="fa-solid fa-graduation-cap text-xs"></i>
                 <span>Admisión 2026</span>
             </a>
         </div>
 
         <!-- Mobile Menu Toggle Button -->
-        <button id="mobile-menu-btn" aria-label="Abrir menú" class="lg:hidden p-2 rounded-lg text-slate-600 hover:text-purple-600 hover:bg-purple-50 transition-colors">
+        <button id="mobile-menu-btn" aria-label="Abrir menú" class="xl:hidden p-2 rounded-xl text-slate-700 hover:text-purple-600 hover:bg-purple-50 transition-colors focus:outline-none">
             <i class="fa-solid fa-bars text-xl"></i>
         </button>
     </nav>
 
     <!-- Mobile Navigation Drawer -->
-    <div id="mobile-menu" class="hidden lg:hidden border-t border-slate-100 bg-white px-4 py-4 space-y-2 shadow-lg">
-        <a href="#nosotros" class="block px-3 py-2 rounded-lg text-sm font-semibold text-slate-700 hover:bg-purple-50 hover:text-purple-700">Sobre Nosotros</a>
-        <a href="#carreras" class="block px-3 py-2 rounded-lg text-sm font-semibold text-slate-700 hover:bg-purple-50 hover:text-purple-700">Programas de Estudio</a>
-        <a href="#estadisticas" class="block px-3 py-2 rounded-lg text-sm font-semibold text-slate-700 hover:bg-purple-50 hover:text-purple-700">Transparencia & Estadísticas</a>
-        <a href="#servicios" class="block px-3 py-2 rounded-lg text-sm font-semibold text-slate-700 hover:bg-purple-50 hover:text-purple-700">Servicios Institucionales</a>
-        <a href="#noticias" class="block px-3 py-2 rounded-lg text-sm font-semibold text-slate-700 hover:bg-purple-50 hover:text-purple-700">Admisión y Noticias</a>
-        <a href="#galeria" class="block px-3 py-2 rounded-lg text-sm font-semibold text-slate-700 hover:bg-purple-50 hover:text-purple-700">Galería</a>
-        <a href="#contacto" class="block px-3 py-2 rounded-lg text-sm font-semibold text-slate-700 hover:bg-purple-50 hover:text-purple-700">Contáctanos</a>
-        <div class="pt-3 border-t border-slate-100">
-            <a href="#noticias" class="w-full inline-flex justify-center items-center gap-2 px-4 py-2.5 rounded-lg text-sm font-semibold text-white shadow-sm" style="background: linear-gradient(135deg, #7114ef 0%, #1475f7 100%);">
-                Admisión 2026 - Postula Aquí
+    <div id="mobile-menu" class="hidden xl:hidden border-t border-slate-100 bg-white px-5 py-4 space-y-2 shadow-xl max-h-[80vh] overflow-y-auto">
+        <!-- Nosotros Dropdown Móvil -->
+        <div class="border-b border-slate-100 pb-2">
+            <button class="w-full flex justify-between items-center py-2 text-sm font-bold text-slate-800" onclick="this.nextElementSibling.classList.toggle('hidden')">
+                <span>Nosotros</span>
+                <i class="fa-solid fa-chevron-down text-xs text-slate-400"></i>
+            </button>
+            <div class="hidden pl-4 space-y-1 py-1 text-xs text-slate-600">
+                <a href="#nosotros" class="block py-1.5 hover:text-purple-600">Presentación</a>
+                <a href="#mision-vision" class="block py-1.5 hover:text-purple-600">Visión, Misión y Valores</a>
+                <a href="#nosotros" class="block py-1.5 hover:text-purple-600">Organización Institucional</a>
+                <a href="#nosotros" class="block py-1.5 hover:text-purple-600">Plana Jerárquica y Docente</a>
+                <a href="#galeria" class="block py-1.5 hover:text-purple-600">Local Institucional</a>
+            </div>
+        </div>
+
+        <!-- Programas Dropdown Móvil -->
+        <div class="border-b border-slate-100 pb-2">
+            <button class="w-full flex justify-between items-center py-2 text-sm font-bold text-slate-800" onclick="this.nextElementSibling.classList.toggle('hidden')">
+                <span>Programas de estudios</span>
+                <i class="fa-solid fa-chevron-down text-xs text-slate-400"></i>
+            </button>
+            <div class="hidden pl-4 space-y-1 py-1 text-xs text-slate-600">
+                <a href="#carreras" class="block py-1.5 hover:text-purple-600">Diseño y Programación Web</a>
+                <a href="#carreras" class="block py-1.5 hover:text-purple-600">Enfermería Técnica</a>
+                <a href="#carreras" class="block py-1.5 hover:text-purple-600">Mecatrónica Automotriz</a>
+                <a href="#carreras" class="block py-1.5 hover:text-purple-600">Industrias de Alimentos y Bebidas</a>
+                <a href="#carreras" class="block py-1.5 hover:text-purple-600">Producción Agropecuaria</a>
+            </div>
+        </div>
+
+        <!-- Admisión Dropdown Móvil -->
+        <div class="border-b border-slate-100 pb-2">
+            <button class="w-full flex justify-between items-center py-2 text-sm font-bold text-slate-800" onclick="this.nextElementSibling.classList.toggle('hidden')">
+                <span>Admisión y Matricula</span>
+                <i class="fa-solid fa-chevron-down text-xs text-slate-400"></i>
+            </button>
+            <div class="hidden pl-4 space-y-1 py-1 text-xs text-slate-600">
+                <a href="#noticias" class="block py-1.5 hover:text-purple-600">Admisión 2026</a>
+                <a href="#noticias" class="block py-1.5 hover:text-purple-600">Matricula</a>
+                <a href="#noticias" class="block py-1.5 hover:text-purple-600">Becas y Créditos</a>
+            </div>
+        </div>
+
+        <!-- Transparencia Dropdown Móvil -->
+        <div class="border-b border-slate-100 pb-2">
+            <button class="w-full flex justify-between items-center py-2 text-sm font-bold text-slate-800" onclick="this.nextElementSibling.classList.toggle('hidden')">
+                <span>Transparencia</span>
+                <i class="fa-solid fa-chevron-down text-xs text-slate-400"></i>
+            </button>
+            <div class="hidden pl-4 space-y-1 py-1 text-xs text-slate-600">
+                <a href="#estadisticas" class="block py-1.5 hover:text-purple-600">Documentos de Gestión</a>
+                <a href="#estadisticas" class="block py-1.5 hover:text-purple-600">Estadísticas</a>
+                <a href="#estadisticas" class="block py-1.5 hover:text-purple-600">Inversiones y Recursos</a>
+                <a href="#contacto" class="block py-1.5 hover:text-purple-600">Libro de reclamaciones</a>
+                <a href="#nosotros" class="block py-1.5 hover:text-purple-600">Licenciamiento</a>
+            </div>
+        </div>
+
+        <!-- Trámite & Contacto Móvil -->
+        <a href="#contacto" class="block py-2 text-sm font-bold text-slate-800 border-b border-slate-100">Tupa (Trámites)</a>
+        <a href="#contacto" class="block py-2 text-sm font-bold text-slate-800 border-b border-slate-100">Contáctanos</a>
+        <a href="#servicios" class="block py-2 text-sm font-bold text-slate-800 border-b border-slate-100">Servicios Académicos</a>
+        <a href="#noticias" class="block py-2 text-sm font-bold text-slate-800 border-b border-slate-100">Noticias y Comunicados</a>
+
+        <div class="pt-3">
+            <a href="#noticias" class="w-full inline-flex justify-center items-center gap-2 px-4 py-3 rounded-xl text-sm font-bold text-white shadow-brand bg-gradient-brand">
+                <i class="fa-solid fa-graduation-cap"></i> Admisión 2026 - Postula Aquí
             </a>
         </div>
     </div>

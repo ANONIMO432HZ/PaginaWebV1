@@ -4,28 +4,143 @@
   --color-brand-purple: #7114ef;
   --color-brand-blue: #1475f7;
   --color-brand-cyan: #08d9ff;
-  --color-brand-dark: #0f172a;
+  --color-brand-dark: #0b1120;
 }
 
-/* Clases utilitarias institucionales inspiradas en IESP Huanta */
+/* Clases utilitarias institucionales extraídas de IESTP Huanta (ITFirm theme) */
+:root {
+  --primary-color: #7114ef;
+  --secondary-color: #1475f7;
+  --third-color: #08d9ff;
+}
+
+/* Fondos de gradiente institucionales - Usando background-image para no reiniciar background-clip */
 .bg-gradient-brand {
-  background: linear-gradient(135deg, #7114ef 0%, #1475f7 100%);
+  background-color: #7114ef;
+  background-image: linear-gradient(135deg, #7114ef 0%, #1475f7 100%);
 }
 
 .bg-gradient-brand-reverse {
-  background: linear-gradient(135deg, #1475f7 0%, #7114ef 100%);
+  background-color: #1475f7;
+  background-image: linear-gradient(135deg, #1475f7 0%, #7114ef 100%);
 }
 
+/* Gradientes de texto compatibles con todos los navegadores (Chrome, Edge, Safari, Firefox) */
 .text-gradient-brand {
-  background: linear-gradient(135deg, #7114ef 0%, #1475f7 100%);
-  -webkit-background-clip: text;
+  background-image: linear-gradient(135deg, #7114ef 0%, #1475f7 100%);
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  color: transparent !important;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  display: inline;
+}
+
+.text-gradient-cyan {
+  background-image: linear-gradient(135deg, #08d9ff 0%, #1475f7 100%);
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  color: transparent !important;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  display: inline;
+}
+
+/* Blindaje para utilitarios bg-clip-text */
+.bg-clip-text {
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
   -webkit-text-fill-color: transparent;
 }
 
-.border-gradient-brand {
-  border-image: linear-gradient(to right, #7114ef, #1475f7) 1;
+.shadow-brand {
+  box-shadow: 0 10px 25px -5px rgba(113, 20, 239, 0.3), 0 8px 10px -6px rgba(20, 117, 247, 0.3);
 }
 
-.shadow-brand {
-  box-shadow: 0 10px 25px -5px rgba(113, 20, 239, 0.25), 0 8px 10px -6px rgba(20, 117, 247, 0.25);
+.shadow-brand-hover:hover {
+  box-shadow: 0 20px 35px -10px rgba(113, 20, 239, 0.35), 0 12px 15px -8px rgba(20, 117, 247, 0.35);
+}
+
+/* Efecto de onda pulsante para botón de video */
+@keyframes pulse-wave {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(113, 20, 239, 0.7);
+  }
+  70% {
+    transform: scale(1.1);
+    box-shadow: 0 0 0 20px rgba(113, 20, 239, 0);
+  }
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(113, 20, 239, 0);
+  }
+}
+
+.btn-video-pulse {
+  animation: pulse-wave 2s infinite;
+}
+
+/* Estilo para items de menú con línea activa inferior */
+.nav-link-item {
+  position: relative;
+  transition: color 0.25s ease;
+}
+
+.nav-link-item::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #7114ef, #1475f7);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateX(-50%);
+  border-radius: 9999px;
+}
+
+.nav-link-item:hover::after {
+  width: 80%;
+}
+
+/* Transición suave para cards de servicios con overlay ascendente */
+.card-fancy-overlay {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.card-fancy-overlay::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, #7114ef 0%, #1475f7 100%);
+  opacity: 0;
+  transform: translateY(100%);
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  z-index: 1;
+}
+
+.card-fancy-overlay:hover::before {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.card-fancy-content {
+  position: relative;
+  z-index: 2;
+  transition: color 0.3s ease;
+}
+
+.card-fancy-overlay:hover .card-fancy-content {
+  color: #ffffff !important;
+}
+
+.card-fancy-overlay:hover .card-fancy-icon {
+  background: #ffffff !important;
+  color: #7114ef !important;
+  transform: scale(1.1);
 }
